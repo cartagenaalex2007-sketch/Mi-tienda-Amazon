@@ -2,10 +2,19 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background: linear-gradient(270deg, #232f3e, #ff9900, #146eb4);
+  background-size: 600% 600%;
+  animation: fondoAnimado 15s ease infinite;
+}
+
+@keyframes fondoAnimado {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header {
-  background: #232f3e; /* color de Amazon */
+  background: #232f3e;
   color: white;
   padding: 15px;
   text-align: center;
@@ -15,18 +24,40 @@ nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff9900;
+  transform: scale(1.1);
 }
 
 .banner {
-  background: #f3f3f3;
+  background: rgba(243, 243, 243, 0.8);
   padding: 30px;
   text-align: center;
 }
 
+.banner h2, .banner p {
+  opacity: 0;
+  animation: aparecer 2s ease forwards;
+}
+
+.banner h2 { animation-delay: 0.5s; }
+.banner p { animation-delay: 1.5s; }
+
+@keyframes aparecer {
+  to { opacity: 1; }
+}
+
 .productos {
-  display: flex;
-  justify-content: center;
   padding: 20px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .producto {
@@ -34,4 +65,45 @@ nav a {
   padding: 15px;
   margin: 10px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 250px;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.producto a {
+  display: inline-block;
+  background: #ff9900;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.producto a:hover {
+  background: #232f3e;
+  transform: translateY(-3px);
+}
+
+footer {
+  background: #232f3e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social a {
+  color: #ff9900;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: white;
 }
