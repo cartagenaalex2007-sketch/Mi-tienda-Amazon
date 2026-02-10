@@ -1,3 +1,4 @@
+/* Fuente y fondo animado */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -13,13 +14,24 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+/* Header fijo */
 header {
   background: #232f3e;
   color: white;
-  padding: 15px;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 nav {
@@ -28,8 +40,9 @@ nav {
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: 600;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -42,19 +55,61 @@ nav a:hover {
   display: none;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 28px;
   color: white;
   cursor: pointer;
 }
 
+/* Banner principal */
 .banner {
-  background: rgba(243, 243, 243, 0.8);
-  padding: 30px;
+  height: 80vh;
+  background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-top: 70px; /* espacio por header fijo */
+}
+
+.banner-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cta {
+  background: #ff9900;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+  background: #146eb4;
+  transform: translateY(-3px);
+}
+
+/* Secciones de productos */
+.productos {
+  padding: 50px 20px;
   text-align: center;
 }
 
-.productos {
-  padding: 20px;
+.productos h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #232f3e;
 }
 
 .categoria {
@@ -65,13 +120,19 @@ nav a:hover {
 
 .producto {
   border: 1px solid #ddd;
-  padding: 15px;
-  margin: 10px;
+  padding: 20px;
+  margin: 15px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 250px;
+  width: 260px;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .producto:hover {
@@ -85,6 +146,7 @@ nav a:hover {
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
+  text-decoration: none;
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
@@ -93,11 +155,12 @@ nav a:hover {
   transform: translateY(-3px);
 }
 
+/* Footer */
 footer {
   background: #232f3e;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 .social a {
@@ -118,9 +181,10 @@ footer {
     flex-direction: column;
     background: #232f3e;
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 0;
-    width: 200px;
+    width: 220px;
+    padding: 15px;
   }
 
   nav.show {
@@ -129,5 +193,13 @@ footer {
 
   .menu-toggle {
     display: block;
+  }
+
+  .banner-text h1 {
+    font-size: 32px;
+  }
+
+  .banner-text p {
+    font-size: 16px;
   }
 }

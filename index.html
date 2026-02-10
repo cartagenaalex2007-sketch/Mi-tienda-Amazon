@@ -6,29 +6,37 @@
   <title>Mi Tienda Amazon Afiliados</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header fijo -->
   <header>
-    <h1>Mi Tienda Online</h1>
+    <div class="logo">Mi Tienda Online</div>
     <nav id="menu">
       <a href="#">Inicio</a>
-      <a href="#">Reseñas</a>
-      <a href="#">Comparativas</a>
-      <a href="#">Contacto</a>
+      <a href="#ropa">Ropa</a>
+      <a href="#tecnologia">Tecnología</a>
+      <a href="#hogar">Hogar</a>
+      <a href="#gaming">Gaming</a>
+      <a href="#belleza">Belleza</a>
+      <a href="#contacto">Contacto</a>
     </nav>
     <button class="menu-toggle">☰</button>
   </header>
 
-  <main>
-    <section class="banner">
-      <h2>Encuentra los mejores productos en Amazon</h2>
-      <p>Recomendaciones confiables y actualizadas</p>
-    </section>
+  <!-- Banner principal -->
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Encuentra los mejores productos en Amazon</h1>
+      <p>Recomendaciones confiables y actualizadas para ti</p>
+      <a href="#categorias" class="cta">Explorar categorías</a>
+    </div>
+  </section>
 
-    <!-- Categorías -->
-    <section class="productos">
-      <h2>Ropa</h2>
+  <!-- Categorías -->
+  <main id="categorias">
+    <section class="productos" id="ropa">
+      <h2>🧥 Ropa</h2>
       <div class="categoria">
         <div class="producto">
           <img src="https://m.media-amazon.com/images/I/616yvJ1VxEL._AC_SX342_SY445_QL70_FMwebp_.jpg" alt="MOHEEN Polo Hombre">
@@ -39,22 +47,37 @@
       </div>
     </section>
 
-    <section class="productos">
-      <h2>Tecnología</h2>
+    <section class="productos" id="tecnologia">
+      <h2>💻 Tecnología</h2>
       <div class="categoria">
         <!-- Aquí agregas productos de tecnología -->
       </div>
     </section>
 
-    <section class="productos">
-      <h2>Hogar</h2>
+    <section class="productos" id="hogar">
+      <h2>🏠 Hogar</h2>
       <div class="categoria">
         <!-- Aquí agregas productos de hogar -->
       </div>
     </section>
+
+    <section class="productos" id="gaming">
+      <h2>🎮 Gaming</h2>
+      <div class="categoria">
+        <!-- Aquí agregas productos de gaming -->
+      </div>
+    </section>
+
+    <section class="productos" id="belleza">
+      <h2>🧴 Belleza</h2>
+      <div class="categoria">
+        <!-- Aquí agregas productos de belleza -->
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer id="contacto">
     <p>© 2026 Mi Tienda Online | Soy afiliado de Amazon y puedo recibir comisiones por las compras realizadas.</p>
     <div class="social">
       <a href="#">Facebook</a>
