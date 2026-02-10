@@ -70,7 +70,7 @@ nav a:hover {
   text-align: center;
   color: white;
   padding: 20px;
-  margin-top: 70px; /* espacio por header fijo */
+  margin-top: 70px;
 }
 
 .banner-text h1 {
@@ -110,12 +110,6 @@ nav a:hover {
   font-size: 32px;
   margin-bottom: 20px;
   color: #232f3e;
-}
-
-.categoria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .producto {
@@ -203,7 +197,8 @@ footer {
     font-size: 16px;
   }
 }
-/* Carrusel de productos */
+
+/* Carrusel */
 .slider {
   display: flex;
   overflow-x: auto;
@@ -257,26 +252,7 @@ footer {
 .dropdown:hover .dropdown-content {
   display: flex;
 }
-.producto.clicked {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #ff9900;
-}
-.banner.fade {
-  opacity: 0.7;
-  transition: opacity 1s ease;
-}
-/* Animación al hacer clic en producto */
-.producto.clicked {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px #ff9900;
-  transition: all 0.3s ease;
-}
 
-/* Efecto al banner cuando se usa CTA */
-.banner.fade {
-  opacity: 0.7;
-  transition: opacity 1s ease;
-}
 /* Animación al hacer clic en producto */
 .producto.clicked {
   transform: scale(1.1);
