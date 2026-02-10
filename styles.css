@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background: linear-gradient(270deg, #232f3e, #ff9900, #146eb4);
@@ -17,7 +17,13 @@ header {
   background: #232f3e;
   color: white;
   padding: 15px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
 }
 
 nav a {
@@ -32,32 +38,29 @@ nav a:hover {
   transform: scale(1.1);
 }
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
 .banner {
   background: rgba(243, 243, 243, 0.8);
   padding: 30px;
   text-align: center;
 }
 
-.banner h2, .banner p {
-  opacity: 0;
-  animation: aparecer 2s ease forwards;
-}
-
-.banner h2 { animation-delay: 0.5s; }
-.banner p { animation-delay: 1.5s; }
-
-@keyframes aparecer {
-  to { opacity: 1; }
-}
-
 .productos {
   padding: 20px;
 }
 
-.slider {
+.categoria {
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .producto {
@@ -68,7 +71,7 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 250px;
+  width: 250px;
 }
 
 .producto:hover {
@@ -106,4 +109,25 @@ footer {
 
 .social a:hover {
   color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #232f3e;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }

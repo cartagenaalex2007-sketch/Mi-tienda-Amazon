@@ -5,16 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Tienda Amazon Afiliados</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <h1>Mi Tienda Online</h1>
-    <nav>
+    <nav id="menu">
       <a href="#">Inicio</a>
       <a href="#">Reseñas</a>
       <a href="#">Comparativas</a>
       <a href="#">Contacto</a>
     </nav>
+    <button class="menu-toggle">☰</button>
   </header>
 
   <main>
@@ -23,33 +26,30 @@
       <p>Recomendaciones confiables y actualizadas</p>
     </section>
 
-    <div class="producto">
-  <img src="https://m.media-amazon.com/images/I/616yvJ1VxEL._AC_SX342_SY445_QL70_FMwebp_.jpg" alt="MOHEEN Polo Hombre">
-  <h3>MOHEEN Polo Hombre Secado Rápido</h3>
-  <p>Camisa polo deportiva de secado rápido, transpirable y con protección solar UPF 50+. Ideal para golf, tenis y uso diario.</p>
-  <a href="https://www.amazon.com/MOHEEN-absorben-camisetas-casuales-12177/dp/B089K6724R?pd_rd_w=P8jB7&content-id=amzn1.sym.f5690a4d-f2bb-45d9-9d1b-736fee412437&pf_rd_p=f5690a4d-f2bb-45d9-9d1b-736fee412437&pf_rd_r=S4H2KAZXH456WASYW3M5&pd_rd_wg=EUrif&pd_rd_r=4d9aafb0-bcf4-4c5a-9336-ccfb31969573&pd_rd_i=B089K6724R&psc=1&linkCode=ll2&tag=101822082007-20&linkId=8d75ec657ed6ed81a0f1c3ff7435724a&language=es_US&ref_=as_li_ss_tl" target="_blank">
-    Comprar en Amazon
-  </a>
-</div>
+    <!-- Categorías -->
+    <section class="productos">
+      <h2>Ropa</h2>
+      <div class="categoria">
+        <div class="producto">
+          <img src="https://m.media-amazon.com/images/I/616yvJ1VxEL._AC_SX342_SY445_QL70_FMwebp_.jpg" alt="MOHEEN Polo Hombre">
+          <h3>MOHEEN Polo Hombre Secado Rápido</h3>
+          <p>Camisa polo deportiva con protección solar UPF 50+.</p>
+          <a href="TU-ENLACE-DE-AFILIADO" target="_blank">Comprar en Amazon</a>
+        </div>
+      </div>
+    </section>
 
     <section class="productos">
-      <h2>Productos destacados</h2>
-      <div class="slider">
-        <div class="producto">
-          <img src="imagen-producto1.jpg" alt="Producto Amazon 1">
-          <p>Descripción breve del producto 1</p>
-          <a href="TU-ENLACE-DE-AFILIADO" target="_blank">Comprar en Amazon</a>
-        </div>
-        <div class="producto">
-          <img src="imagen-producto2.jpg" alt="Producto Amazon 2">
-          <p>Descripción breve del producto 2</p>
-          <a href="TU-ENLACE-DE-AFILIADO" target="_blank">Comprar en Amazon</a>
-        </div>
-        <div class="producto">
-          <img src="imagen-producto3.jpg" alt="Producto Amazon 3">
-          <p>Descripción breve del producto 3</p>
-          <a href="TU-ENLACE-DE-AFILIADO" target="_blank">Comprar en Amazon</a>
-        </div>
+      <h2>Tecnología</h2>
+      <div class="categoria">
+        <!-- Aquí agregas productos de tecnología -->
+      </div>
+    </section>
+
+    <section class="productos">
+      <h2>Hogar</h2>
+      <div class="categoria">
+        <!-- Aquí agregas productos de hogar -->
       </div>
     </section>
   </main>
