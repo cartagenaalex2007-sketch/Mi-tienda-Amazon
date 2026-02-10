@@ -44,3 +44,30 @@ sliders.forEach(slider => {
 
   setInterval(autoScroll, 4000);
 });
+const buyButtons = document.querySelectorAll('.producto a');
+buyButtons.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    alert("Serás redirigido a Amazon para completar tu compra.");
+  });
+});
+const subLinks = document.querySelectorAll('.dropdown-content a');
+subLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const subCat = link.getAttribute('href').replace('#','');
+    document.querySelectorAll('.producto').forEach(prod => {
+      prod.style.display = prod.classList.contains(subCat) ? 'block' : 'none';
+    });
+  });
+});
+const productos = document.querySelectorAll('.producto');
+productos.forEach(prod => {
+  prod.addEventListener('click', () => {
+    prod.classList.add('clicked');
+    setTimeout(() => prod.classList.remove('clicked'), 500);
+  });
+});
+const cta = document.querySelector('.cta');
+cta.addEventListener('click', () => {
+  document.querySelector('.banner').classList.add('fade');
+});
