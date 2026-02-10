@@ -15,3 +15,11 @@ function autoScroll() {
 }
 
 setInterval(autoScroll, 3000);
+
+// Menú responsive
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+  nav.classList.toggle('show');
+});
