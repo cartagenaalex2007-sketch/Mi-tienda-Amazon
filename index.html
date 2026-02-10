@@ -14,8 +14,25 @@
     <div class="logo">Mi Tienda Online</div>
     <nav id="menu">
       <a href="#">Inicio</a>
-      <a href="#ropa">Ropa</a>
-      <a href="#tecnologia">Tecnología</a>
+
+      <div class="dropdown">
+        <a href="#ropa">Ropa ▾</a>
+        <div class="dropdown-content">
+          <a href="#camisetas">Camisetas</a>
+          <a href="#pantalones">Pantalones</a>
+          <a href="#zapatos">Zapatos</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#tecnologia">Tecnología ▾</a>
+        <div class="dropdown-content">
+          <a href="#smartphones">Smartphones</a>
+          <a href="#laptops">Laptops</a>
+          <a href="#accesorios">Accesorios</a>
+        </div>
+      </div>
+
       <a href="#hogar">Hogar</a>
       <a href="#gaming">Gaming</a>
       <a href="#belleza">Belleza</a>
@@ -37,41 +54,47 @@
   <main id="categorias">
     <section class="productos" id="ropa">
       <h2>🧥 Ropa</h2>
-      <div class="categoria">
+      <div class="slider">
         <div class="producto">
-          <img src="https://m.media-amazon.com/images/I/616yvJ1VxEL._AC_SX342_SY445_QL70_FMwebp_.jpg" alt="MOHEEN Polo Hombre">
+          <img src="https://m.media-amazon.com/images/I/616yvJ1VxEL._AC_SX342_SY445_.jpg" alt="MOHEEN Polo Hombre">
           <h3>MOHEEN Polo Hombre Secado Rápido</h3>
           <p>Camisa polo deportiva con protección solar UPF 50+.</p>
           <a href="https://www.amazon.com/dp/B089K6724R?tag=101822082007-20" target="_blank">Comprar en Amazon</a>
+        </div>
+        <div class="producto">
+          <img src="https://m.media-amazon.com/images/I/71k+zXzYzDL._AC_SX342_SY445_.jpg" alt="Camiseta deportiva">
+          <h3>Camiseta Deportiva Hombre</h3>
+          <p>Ligera y transpirable para entrenamientos.</p>
+          <a href="https://www.amazon.com/dp/B08XYZ123?tag=101822082007-20" target="_blank">Comprar en Amazon</a>
         </div>
       </div>
     </section>
 
     <section class="productos" id="tecnologia">
       <h2>💻 Tecnología</h2>
-      <div class="categoria">
-        <!-- Aquí agregas productos de tecnología -->
+      <div class="slider">
+        <!-- Productos de tecnología -->
       </div>
     </section>
 
     <section class="productos" id="hogar">
       <h2>🏠 Hogar</h2>
-      <div class="categoria">
-        <!-- Aquí agregas productos de hogar -->
+      <div class="slider">
+        <!-- Productos de hogar -->
       </div>
     </section>
 
     <section class="productos" id="gaming">
       <h2>🎮 Gaming</h2>
-      <div class="categoria">
-        <!-- Aquí agregas productos de gaming -->
+      <div class="slider">
+        <!-- Productos de gaming -->
       </div>
     </section>
 
     <section class="productos" id="belleza">
       <h2>🧴 Belleza</h2>
-      <div class="categoria">
-        <!-- Aquí agregas productos de belleza -->
+      <div class="slider">
+        <!-- Productos de belleza -->
       </div>
     </section>
   </main>
@@ -89,30 +112,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-<nav id="menu">
-  <a href="#">Inicio</a>
-
-  <div class="dropdown">
-    <a href="#ropa">Ropa ▾</a>
-    <div class="dropdown-content">
-      <a href="#camisetas">Camisetas</a>
-      <a href="#pantalones">Pantalones</a>
-      <a href="#zapatos">Zapatos</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <a href="#tecnologia">Tecnología ▾</a>
-    <div class="dropdown-content">
-      <a href="#smartphones">Smartphones</a>
-      <a href="#laptops">Laptops</a>
-      <a href="#accesorios">Accesorios</a>
-    </div>
-  </div>
-
-  <a href="#hogar">Hogar</a>
-  <a href="#gaming">Gaming</a>
-  <a href="#belleza">Belleza</a>
-  <a href="#contacto">Contacto</a>
-</nav>
