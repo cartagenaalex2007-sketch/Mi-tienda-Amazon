@@ -203,3 +203,24 @@ footer {
     font-size: 16px;
   }
 }
+/* Carrusel de productos */
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+}
+
+.slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+  background: #ff9900;
+  border-radius: 4px;
+}
+
+.slider::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}

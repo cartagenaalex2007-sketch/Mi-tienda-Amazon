@@ -41,3 +41,23 @@ if (slider) {
 
   setInterval(autoScroll, 3000);
 }
+// Carrusel automático
+const sliders = document.querySelectorAll('.slider');
+
+sliders.forEach(slider => {
+  let scrollAmount = 0;
+
+  function autoScroll() {
+    if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
+      scrollAmount = 0;
+    } else {
+      scrollAmount += 250;
+    }
+    slider.scrollTo({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  setInterval(autoScroll, 4000);
+});
