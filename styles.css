@@ -224,3 +224,36 @@ footer {
 .slider::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #232f3e;
+  min-width: 180px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background: #ff9900;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
